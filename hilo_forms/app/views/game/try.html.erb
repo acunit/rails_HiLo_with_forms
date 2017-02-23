@@ -1,0 +1,11 @@
+Your guess is: <%= @result %>
+<hr/>
+<form action="game" method="get">
+  <input type="text" name="guess" placeholder="Guess number here"/>
+  <input type="submit" value="Submit Number"/><br>
+</form>
+<br>
+Number of guesses: <%= @attempts %>
+<br>
+<br>
+<%= button_to "Reset Game", "/new_game", :type => 'button' %>
